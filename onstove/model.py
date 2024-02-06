@@ -109,6 +109,9 @@ class DataProcessor:
         """
         Initializes the class and sets an empty layers dictionaries.
         """
+
+        #TODO: (RESOLUTION ISSUE) change tuple in __init__ argument to be a differnet number. Could calculate a min? idk - Henry
+
         unit_test = CRS.from_user_input(project_crs)
         unit_name = unit_test.axis_info[0].unit_name
 

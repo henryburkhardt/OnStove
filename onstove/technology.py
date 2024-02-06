@@ -2152,6 +2152,8 @@ class Biogas(Technology):
         function does not return anything but saves the time of collection in the `time_of_collection` of the Biogas
         class.
 
+        #TODO: (RESOLUTION ISSUE) change calculation so it's not limited to just 1km x 1km - Henry
+
         Parameters
         ----------
         model: OnStove model
@@ -2159,6 +2161,7 @@ class Biogas(Technology):
             :class:`onstove.OnStove`.
 
         """
+
         self.available_biogas(model)
         required_energy_hh = self.required_energy_hh(model)
 
